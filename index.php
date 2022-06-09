@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       drk_delete_attachements
+ * Plugin Name:       drk_delete_attachments
  * Description:       This plugin deletes the related attachments when we are deleting a post
  * Version:           1.0
  * Author:            Dimitrios Kyriakos
@@ -8,16 +8,7 @@
  * License:           MIT License
  * Text Domain:       drk_delete_attachments
  */
-/*
 
-add_action( 'before_delete_post', function( $id ) {
-  $attachments = get_attached_media( '', $id );
-  foreach ($attachments as $attachment) {
-    wp_delete_attachment( $attachment->ID, 'true' );
-  }
-} );
-
-*/
 
 if (! defined('ABSPATH')){
     die("I'm just a plugin not much I can do when called directly.");
